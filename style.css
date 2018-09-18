@@ -56,9 +56,9 @@ label {
     
  }
 
- #produkter {
+ .produkt {
      float: left;
-     width: 100px;
+     width: 400px;
      margin-left: 10px;
     
      border: 2px solid blue;

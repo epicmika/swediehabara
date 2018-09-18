@@ -2,73 +2,50 @@ fetch("product.json")
 .then(function(response) {
     return response.json();
 })
-
 .then(function(data) {
     prodData=data;
     createListFromProdData();
 })
-
 function createListFromProdData() {
     var prodSite=document.getElementById("produkter")
     prodSite.className="productClass";
-    console.log("function");
-
+    // console.log("function");
     for(var index=0; index <prodData.length; index++) {
-        console.log("i loopen");
-
+       // console.log("i loopen");
         var prodCon=createProdCon(prodData[index]);
-        console.log("prodCon")
-        prodSite.innerHTML(prodCon);
-
+        console.log("return: " + prodCon)
+        prodSite.appendChild(prodCon);
         
-        
-
         //var prodDiv = document.getElementById("produkter")
         //prodDiv.innerHTML += prodCon;
     }
     
-
-   // document.body.appendChild(prodSite);
+    //prodSite.innerHTML += prodCon;
 }
-
 function createProdCon(prodData) {
-
-    console.log("funktion createProdCon");
-    console.log(prodData);
-   // var prodCon=document.createElement("div");
-
     var prodDiv = document.createElement("div")
-    console.log(prodDiv);
-   // var minaProdukter = "";
-    //prodDiv.innerHTML += minaProdukter;
+    prodDiv.className="produkt";
 
     //Image
-    // var getProdImg=document.createElement("img");
-    // getProdImg.src="bild/"+prodData.prodImage;
-    // prodDiv.appendChild(getProdImg);
-    // console.log(getProdImg.src)
+    var getProdImg=document.createElement("img");
+    getProdImg.src="bild/"+prodData.prodImage;
+    prodDiv.appendChild(getProdImg);
     
     //Name
     var prodName=document.createElement("p");
-    var getProdName=""+prodData.prodName;
-    // console.log(getProdName);
-    console.log("här");
-    //prodName.appendChild(getProdName);
-   
-    //console.log(prodName);
-    //prodDiv.appendChild(getProdName); 
-    console.log("inte här");
-    console.log(getProdName);
+    var getProdName=prodData.prodName;
+    prodName.innerHTML += getProdName;
+    prodDiv.appendChild(prodName);
 
     //Price
-    // var getProdPrice=document.createElement("p");
-    // getProdPrice.innerText=""+prodData.prodPrice;
+    var prodPrice=document.createElement("p");
+    var getProdPrice=prodData.prodPrice;
+    prodPrice.innerHTML += getProdPrice;
+    prodDiv.appendChild(prodPrice);
     // prodDiv.appendChild(getProdPrice);
 
-    console.log("slutet på funktion");
-
-    console.log(prodCon);
+    // console.log("slutet på funktion");
+    //console.log(prodCon);
     console.log(prodDiv);
-
     return prodDiv;
 }
