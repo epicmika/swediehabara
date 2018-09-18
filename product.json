@@ -1,0 +1,27 @@
+[
+    {
+        "prodName":"Ao Haru Ride",
+        "prodPrice":"60KR",
+        "prodImage":"AOHARU.jpg"
+    },{
+        "prodName":"Dengeki Daisy",
+        "prodPrice":"60KR",
+        "prodImage":"DENGEKI.jpg"
+    },{
+        "prodName":"My Hero Academia",
+        "prodPrice":"70KR",
+        "prodImage":"MHACOVER.jpg"
+    },{
+        "prodName":"One Piece",
+        "prodPrice":"60KR",
+        "prodImage":"ONEPIECE.jpg"
+    },{
+        "prodName":"Re:Zero",
+        "prodPrice":"100KR",
+        "prodImage":"REZERO.jpg"
+    },{
+        "prodName":"Toradora",
+        "prodPrice":"100KR",
+        "prodImage":"TORADORA.jpg"
+    }
+]
