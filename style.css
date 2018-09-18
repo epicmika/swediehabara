@@ -17,9 +17,10 @@
 #aside {
     width: 7.5%;
     height: auto;
-    float: right;
+    float: left;
 
     border: 2px solid blue; 
+    
 }
 
 #footer {
@@ -31,21 +32,11 @@
 img {
     width: 200;
     height: 180px;
-    border: 1px solid black;
 
 }
 
 table, td {
     border: 1px solid black;
-}
-
-#content2 {
-    float: right;
-    width: auto;
-    height: auto;
-    border: 2px solid blue;
-    margin-bottom: 10px;
-
 }
 
 h3 {
@@ -62,15 +53,19 @@ label {
      width: 300px;
      font-family: 'Arvo', serif;
      font-size: 14;
-
     
  }
 
- .prodSiteClass {
+ #produkter {
      float: left;
-     width: 450px;
-     background:green;
-     border: 1px solid black;
+     width: 100px;
+     margin-left: 10px;
+    
+     border: 2px solid blue;
+ }
+
+ li {
+    list-style: none;
  }
 
 
