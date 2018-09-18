@@ -6,34 +6,26 @@
 }
 
 #content {
-    float: right;
-    width: auto;
+    width: 91%;
     height: auto;
+    float: right;
+    margin-left: 10px;
+    
     border: 2px solid blue;
-    margin-bottom: 10px;
-    margin-left: 8%;
 }
 
 #aside {
-    width: 100px;
+    width: 7.5%;
     height: auto;
-    border: 2px solid blue;
-    float: left;
-    
+    float: right;
+
+    border: 2px solid blue; 
 }
 
 #footer {
     background-color: yellow;
     border: 2px solid blue;
     margin-top: 2px;
-
-}
-
-.shoujo {
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    float: left;
 }
 
 img {
