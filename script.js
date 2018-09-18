@@ -24,11 +24,13 @@ function createListFromProdData() {
 function createProdCon(prodData) {
     var prodCon=document.createElement("div");
     prodCon.className="prodSiteClass";
+    console.log(prodData)
 
     //Image
     var getProdImg=document.createElement("img");
-    getProdImg.src="/bild"+prodData.prodImage;
+    getProdImg.src="bild/"+prodData.prodImage;
     prodCon.appendChild(getProdImg);
+    console.log(getProdImg.src)
 
     //Name
     var getProdName=document.createElement("p");
